@@ -16,9 +16,6 @@ import java.util.UUID;
 /**
  * <p/>Description：设备相关信息查询工具
  * <p/>author： chen chao
- * <p/>date： 2017/8/23 17:08
- * <p/>update： (date)
- * <p/>version： V1.0
  */
 public class DeviceUtils {
 

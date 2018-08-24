@@ -10,7 +10,6 @@ import java.util.Locale;
  * @ClassName DateTimeHelpUtils
  * @Description 日期时间相关帮助工具
  * @author chen chao
- * @date 2016-6-28
  */
 
 public class DateTimeHelpUtils

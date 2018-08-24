@@ -1,13 +1,3 @@
-/**  
-* @Project: pda-common-for-eclipse
-* @Title: IOStreamDealUtils.java
-* @Package com.zteict.pda.common.utils
-* @author chen chao
-* @date 2016-4-25 下午4:03:58
-* @Copyright: 2016 湖南中兴网信科技有限公司 Inc. All rights reserved.
-* @version 1.1  
-*/
-
 package net.cc.qbaseframework.coreutils;
 
 import java.io.ByteArrayOutputStream;
@@ -18,7 +8,6 @@ import java.io.InputStream;
  * @ClassName IOStreamDealUtils
  * @Description IO流处理工具
  * @author chen chao
- * @date 2016-4-25
  */
 
 public class IOStreamDealUtils

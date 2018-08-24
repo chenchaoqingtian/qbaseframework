@@ -1,13 +1,3 @@
-/**  
- * @Project: pda-common-for-eclipse
- * @Title: GetPathFromUri4kitkatUtils.java
- * @Package com.zteict.pda.common.utils
- * @author chen chao
- * @date 2016-4-25 下午4:00:06
- * @Copyright: 2016 湖南中兴网信科技有限公司 Inc. All rights reserved.
- * @version 1.1  
- */
-
 package net.cc.qbaseframework.coreutils;
 
 import android.content.ContentUris;
@@ -23,7 +13,6 @@ import android.provider.MediaStore;
  * @ClassName GetPathFromUri4kitkatUtils
  * @Description 为Android4.4及以上兼容设计的从Uri获取文件绝对路径工具
  * @author chen chao
- * @date 2016-4-25
  */
 
 public class GetPathFromUri4kitkatUtils

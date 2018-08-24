@@ -1,13 +1,3 @@
-/**  
- * @Project: pda-common-for-eclipse
- * @Title: ImageUtils.java
- * @Package com.zteict.pda.common.utils
- * @author chen chao
- * @date 2016-6-23 上午10:00:30
- * @Copyright: 2016 深圳中兴网信科技有限公司 Inc. All rights reserved.
- * @version 1.1  
- */
-
 package net.cc.qbaseframework.coreutils;
 
 import android.app.Activity;
@@ -29,12 +19,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * @ClassName ImageUtils
  * @Description 图片处理工具
  * @author chen chao
- * @date 2016-6-23
  */
 
 public class ImageUtils

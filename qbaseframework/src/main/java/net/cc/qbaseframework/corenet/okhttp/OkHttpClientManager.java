@@ -84,7 +84,7 @@ public class OkHttpClientManager
 	 * @Description: 同步post请求
 	 * @param  url 请求url
 	 * @param  headMap 请求头信息
-	 * @param  params 请求参数
+	 * @param  params 请求参数（body）
 	 * @return Response
 	 * @throws IOException
 	 */
@@ -95,6 +95,20 @@ public class OkHttpClientManager
 
 	/**
 	 * @Title: syncPost
+	 * @Description: 同步post请求
+	 * @param  url 请求url
+	 * @param  headMap 请求头信息
+	 * @param  params 请求参数（query）
+	 * @return Response
+	 * @throws IOException
+	 */
+	public Response syncPost(String url,Map<String, String> headMap, List<BasicNameValuePair> params) throws IOException{
+		Request request = buildPostRequest(url, headMap, params);
+		return execute(request);
+	}
+
+	/**
+	 * @Title: syncUploadFiles
 	 * @Description: 同步post请求（带文件上传）
 	 * @param  url 请求url
 	 * @param  headMap 请求头信息

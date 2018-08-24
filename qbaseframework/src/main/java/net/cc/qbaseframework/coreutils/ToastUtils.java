@@ -7,7 +7,6 @@ import android.widget.Toast;
  * @ClassName ToastUtils
  * @Description toast提示工具
  * @author chen chao
- * @date 2016-4-25
  */
 
 public class ToastUtils

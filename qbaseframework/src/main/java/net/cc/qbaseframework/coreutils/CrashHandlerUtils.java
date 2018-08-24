@@ -29,7 +29,6 @@ import java.util.Map;
  * @ClassName CrashHandlerUtils
  * @Description 程序异常处理及异常信息收集工具
  * @author chen chao
- * @date 2016-4-27
  */
 
 public class CrashHandlerUtils implements UncaughtExceptionHandler

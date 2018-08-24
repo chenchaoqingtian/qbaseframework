@@ -7,9 +7,6 @@ import java.io.File;
 /**
  * <p/>Description：数据缓存清理管理
  * <p/>author： chen chao
- * <p/>date： 2017/8/3 17:08
- * <p/>update： (date)
- * <p/>version： V1.0
  */
 public class DataCleanUtils {
     /**

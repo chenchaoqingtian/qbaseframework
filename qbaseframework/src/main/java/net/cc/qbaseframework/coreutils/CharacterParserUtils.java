@@ -4,7 +4,6 @@ package net.cc.qbaseframework.coreutils;
  * @ClassName CharacterParserUtils
  * @Description 字符解析工具（java汉字转拼音）
  * @author chen chao
- * @date 2016-5-13
  */
 
 public class CharacterParserUtils

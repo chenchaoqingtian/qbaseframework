@@ -10,7 +10,6 @@ import java.util.Date;
  * @ClassName DateTimeUtils
  * @Description 日期时间工具
  * @author chen chao
- * @date 2016-4-25
  */
 
 public class DateTimeUtils

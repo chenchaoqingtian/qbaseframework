@@ -1,13 +1,3 @@
-/**  
- * @Project: pda-common-for-eclipse
- * @Title: FileUtils.java
- * @Package com.zteict.pda.common.utils
- * @author chen chao
- * @date 2016-4-25 下午3:58:59
- * @Copyright: 2016 湖南中兴网信科技有限公司 Inc. All rights reserved.
- * @version 1.1  
- */
-
 package net.cc.qbaseframework.coreutils;
 
 import android.content.Context;
@@ -38,7 +28,6 @@ import java.util.UUID;
  * @ClassName FileUtils
  * @Description 文件处理工具
  * @author chen chao
- * @date 2016-4-25
  */
 
 public class FileUtils

@@ -8,6 +8,7 @@ import org.apache.http.message.BasicNameValuePair;
 import java.io.IOException;
 import java.net.SocketTimeoutException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -70,9 +71,22 @@ public class SyncHttpRequest extends HttpRequest {
 		Object obj = null;
 		Log.v(TAG+":post:url", url);
 		try {
-			String jsonParams = JSON.toJSONString(requestParamObj);
-			Log.v(TAG + ":post:requestparams", jsonParams);
-			Response response = OkHttpClientManager.getInstance().syncPost(url, headMap, jsonParams);
+			Response response = null;
+			if(requestParamObj instanceof HashMap){
+				HashMap<String, String> requestParams = (HashMap) requestParamObj;
+				List<BasicNameValuePair> params = new ArrayList<>();
+				if(requestParams!=null && !requestParams.isEmpty()) {
+					for(Map.Entry<String, String> entry : requestParams.entrySet()){
+						Log.v(TAG+":post:requestparams", entry.getKey()+"="+entry.getValue());
+						params.add(new BasicNameValuePair(entry.getKey(), entry.getValue()));
+					}
+				}
+				response = OkHttpClientManager.getInstance().syncPost(url, headMap, params);
+			} else {
+				String params = JSON.toJSONString(requestParamObj);
+				Log.v(TAG + ":post:requestparams", params);
+				response = OkHttpClientManager.getInstance().syncPost(url, headMap, params);
+			}
 			if (response.isSuccessful()) {
 				String responseStr = response.body().string();
 				Log.v(TAG + ":post:responseresult", responseStr);
